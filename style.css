@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+/* Header Section */
 header{
     position: absolute;
     left: 0px;
@@ -82,7 +83,7 @@ header .navbar ul li a.active::before{
     left: 0;
 }
 
-
+/* Home section */
 .home{
     min-height: 100vh;
     background-image: url("images/home.jpg");
@@ -155,4 +156,83 @@ header .navbar ul li a.active::before{
 .home .home-content .block .cv-btn a:hover{
     background-color:white;
     color: #000000;
+}
+
+/* About-me section */
+
+.about-me{
+    padding: 100px 15px;
+    background-color: white;
+}
+
+.about-me .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.about-me .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.about-me .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #fedb01;
+    bottom: 0px;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p{
+    display: block;
+    padding: 5px 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.about-me .about-content .img img{
+    width: 100%;
+    display: block;
+}
+.about-me .about-content .text{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+}
+
+.about-me .about-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
+.about-me .about-content .text h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
+}
+.about-me .about-content .text h6 span{
+    color: darkgreen;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    color: darkgrey;
 }
