@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap');
 
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -118,10 +121,12 @@ header .navbar ul li a.active::before{
     font-weight: 500;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
+    
 }
 .home .home-content .block h1{
     color: white;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -206,8 +211,9 @@ header .navbar ul li a.active::before{
 }
 
 .about-me .about-content .img img{
-    width: 100%;
+    width: 95%;
     display: block;
+    height: 90%;
 }
 .about-me .about-content .text{
     flex: 0 0 66.66%;
@@ -235,4 +241,68 @@ header .navbar ul li a.active::before{
     font-weight: 600;
     line-height: 24px;
     color: darkgrey;
+    margin: 0 0 20px;
+}
+
+.about-me .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-me .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+.about-me .about-content .text .info .list label{
+    padding-right: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-me .about-content .text .info .list p{
+    margin: 0;
+}
+
+.about-me .about-content .text .social-links{
+    padding-top: 30px;
+}
+
+.about-me .about-content .text .social-links a{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid black;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.about-me .about-content .text .social-links a:hover{
+    background-color:transparent;
+}
+
+.about-me .about-content .text .social-links a .fa{
+    color: whitesmoke;
+    font-size: 15px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.about-me .about-content .text .social-links a:hover .fa{
+    color: black;
 }
